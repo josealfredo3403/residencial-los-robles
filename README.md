@@ -1,6 +1,6 @@
 # Residencial Los Robles — Sprint 1
 
-Código del Sprint 1 del proyecto "Aplicación móvil para Residencial Los Robles", desarrollado con React (Vite) como parte de la Actividad 3 (SCRUM) de Lenguajes de Programación Back End.
+Código del Sprint 1 del proyecto "Aplicación móvil para Residencial Los Robles", desarrollado con React (Vite) como parte de la Actividad 3 (SCRUM) de proyecto 2.
 
 ## Historias de usuario implementadas
 
