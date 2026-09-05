@@ -1,0 +1,285 @@
+:root {
+  --ink: #1b2a38;
+  --paper: #edeae2;
+  --accent: #3e7c6b;
+  --accent-soft: #e4ede9;
+  --alert: #c1443b;
+  --alert-soft: #f6e4e2;
+  --line: #c9c2b4;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+}
+
+.fondo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.telefono {
+  width: 100%;
+  max-width: 390px;
+  background: var(--white);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(27, 42, 56, 0.18);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
+}
+
+.encabezado {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 28px 24px 20px;
+}
+
+.encabezado-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #9fb0ba;
+}
+
+.encabezado h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 2px 0 0;
+}
+
+.contenido {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.pantalla {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.etiqueta-vivienda {
+  font-size: 13px;
+  color: #6b7783;
+  margin: 0;
+}
+
+/* --- Estado de cuenta --- */
+
+.tarjeta-saldo {
+  background: var(--alert-soft);
+  border: 1px solid #e6c9c5;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta-saldo.al-dia {
+  background: var(--accent-soft);
+  border-color: #cfe0d9;
+}
+
+.tarjeta-saldo-label {
+  font-size: 13px;
+  color: #6b7783;
+}
+
+.tarjeta-saldo-monto {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.boton-pagar {
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-pagar:hover {
+  opacity: 0.92;
+}
+
+.subtitulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 4px 0 0;
+}
+
+.lista-historial,
+.lista-contactos,
+.lista-alertas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movimiento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.movimiento-concepto {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.movimiento-fecha {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #6b7783;
+}
+
+.movimiento-derecha {
+  text-align: right;
+}
+
+.movimiento-monto {
+  display: block;
+  font-weight: 600;
+}
+
+.movimiento-estado {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+/* --- Emergencia --- */
+
+.zona-emergencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px 0 8px;
+}
+
+.boton-emergencia {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--alert);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(193, 68, 59, 0.35);
+}
+
+.boton-emergencia:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.boton-emergencia:hover:not(:disabled) {
+  opacity: 0.94;
+}
+
+.texto-ayuda {
+  font-size: 13px;
+  color: #6b7783;
+  max-width: 240px;
+  margin: 0;
+}
+
+.lista-contactos li {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.alerta {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border: 1px solid #e6c9c5;
+  background: var(--alert-soft);
+  border-radius: 12px;
+}
+
+.alerta-punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--alert);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.alerta-texto {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.alerta-ubicacion {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #6b7783;
+}
+
+/* --- Tabs --- */
+
+.tabs {
+  display: flex;
+  border-top: 1px solid var(--line);
+}
+
+.tab {
+  flex: 1;
+  background: var(--white);
+  border: none;
+  padding: 14px 8px;
+  font-size: 12px;
+  color: #8b96a0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.tab-icono {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+}
+
+.tab.activa {
+  color: var(--ink);
+  font-weight: 600;
+}
