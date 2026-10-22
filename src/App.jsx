@@ -1,4 +1,4 @@
-jsx
+
 import { useState } from 'react'
 import EstadoCuenta from './components/EstadoCuenta.jsx'
 import BotonEmergencia from './components/BotonEmergencia.jsx'
