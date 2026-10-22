@@ -2,7 +2,7 @@
 
 Código del proyecto "Aplicación móvil para Residencial Los Robles", desarrollado con React (Vite) como parte de la Actividad 3 (SCRUM) de Proyecto 2.
 
-Tablero de seguimiento (Trello): PEGA AQUÍ TU LINK
+Tablero de seguimiento (Trello): https://trello.com/invite/b/6a948d8daf0c17c098ad0c6e/ATTId25784f3517795be775a14eea63600ee0CAB72B4/residencial-los-robles
 
 ## Historias de usuario implementadas
 
